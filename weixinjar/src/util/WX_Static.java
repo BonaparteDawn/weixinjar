@@ -5,6 +5,7 @@ import java.util.Date;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import control.WX_FileControler;
+import control.WX_FileProControler;
 import control.WX_XmlControler;
 
 import bean.WX_DeveloperConfig;
@@ -20,12 +21,24 @@ public class WX_Static  extends WX_Object{
 	 * 开发者公众账号的基本信息
 	 */
 	 public static WX_DeveloperConfig devConfig;
-	 public static String  ROOTPATH;
+	 /**
+	  * 项目class根路径
+	  */
+	 public static String  CLASSPATH;
+	 /**
+	  * 数据编码
+	  */
+	 public static String ENCODE;
+	 /**
+	  * 返回码信息管理器
+	  */
+	 public static WX_FileProControler RETURNCODE_MANAGER;
 	 static{
-		 ROOTPATH = WX_Static.class.getClassLoader().getResource("").getFile().toString();
-		String info;
-		info = WX_FileControler.readFromFile(ROOTPATH+"/dvpconfig.xml");
+		 CLASSPATH = WX_Static.class.getClassLoader().getResource("").getFile().toString();
+		ENCODE = "UTF-8";
+		String info = WX_FileControler.readFromFile(CLASSPATH+"/dvpconfig.xml");
 		devConfig = (WX_DeveloperConfig) WX_XmlControler.xml2object(info, WX_DeveloperConfig.class);
+		RETURNCODE_MANAGER = new WX_FileProControler("returncode.properties");
 	 }
 	/**
 	 * 获得当前的系统时间

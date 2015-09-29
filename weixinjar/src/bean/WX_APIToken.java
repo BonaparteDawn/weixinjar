@@ -1,6 +1,6 @@
 package bean;
 /**
- * API凭证
+ * API凭证(调用API接口后，服务器返回的凭证)
  * @author YanFuzhong
  * @date 2015-9-27 下午01:24:00
  * @version 1.0

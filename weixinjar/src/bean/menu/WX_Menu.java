@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class WX_Menu {
 	/**
-	 * 菜单集装箱
+	 * 菜单子按钮
 	 */
 	private List<WX_ComplexButton> button = new ArrayList<WX_ComplexButton>();
 

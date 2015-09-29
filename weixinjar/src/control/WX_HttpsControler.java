@@ -29,9 +29,9 @@ import bean.WX_Object;
  */
 public class WX_HttpsControler extends WX_Object{
 	/**
-	 *  凭证获取（GET）
+	 *  凭证获取的API（GET）
 	 */
-	public final static String token_url = WX_API.GET_TOCKEN;
+	public final static String GET_TOCKEN_API = WX_API.GET_TOCKEN;
 	/**
 	 * 发送https请求
 	 * @param api 请求地址
@@ -97,7 +97,7 @@ public class WX_HttpsControler extends WX_Object{
 	 */
 	public  WX_APIToken getToken(String appid, String appsecret) {
 		WX_APIToken token = null;
-		String requestUrl = token_url.replace("APPID", appid).replace("APPSECRET", appsecret);
+		String requestUrl = GET_TOCKEN_API.replace("APPID", appid).replace("APPSECRET", appsecret);
 		// 发起GET请求获取凭证
 		JSONObject jsonObject = httpsRequest(requestUrl, WX_Method_Util.GET, null);
 		if (null != jsonObject) {

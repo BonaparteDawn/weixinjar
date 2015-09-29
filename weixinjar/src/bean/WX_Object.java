@@ -6,10 +6,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.List;
-
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.logging.Log;
-
 import util.WX_Static;
 /**
  * 
@@ -24,8 +22,8 @@ public abstract class WX_Object {
 	 */
 	public Log log = WX_Static.log(getClass());
 	/**
-	 * 写数据到输出流中（使用完需要手动关闭数据流）
-	 * @param info
+	 * 以{@link util.WX_Static#ENCODE}编码方式写数据到输出流中（使用完需要手动关闭数据流）
+ 	 * @param info
 	 * @param out
 	 * @return boolean
 	 */
@@ -36,7 +34,7 @@ public abstract class WX_Object {
 			return res;
 		}
 		try {
-			res=write(info.getBytes("UTF-8"), out);
+			res=write(info.getBytes(WX_Static.ENCODE), out);
 		} catch (UnsupportedEncodingException e) {
 			log.error(e.getMessage());
 		}
@@ -63,7 +61,7 @@ public abstract class WX_Object {
 		return res;
 	}
 	/**
-	 * 读数据到输入流中（使用完需要手动关闭数据流）
+	 * 以{@link util.WX_Static#ENCODE}编码方式读数据到输入流中（使用完需要手动关闭数据流）
 	 * @param in
 	 * @return String
 	 */
@@ -74,7 +72,7 @@ public abstract class WX_Object {
 			return res;
 		}
 		try {
-			InputStreamReader reader = new InputStreamReader(in, "utf-8");
+			InputStreamReader reader = new InputStreamReader(in, WX_Static.ENCODE);
 			res=read(reader);
 		} catch (UnsupportedEncodingException e) {
 			log.error(e.getMessage());

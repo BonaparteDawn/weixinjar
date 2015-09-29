@@ -1,0 +1,320 @@
+2015-09-27 13:36:10,892 ERROR [main] (WX_CommonUtil.java:76)     - https请求异常：{}
+javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1884)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:276)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:270)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1341)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at control.WX_CommonUtil.httpsRequest(WX_CommonUtil.java:65)
+	at control.WX_CommonUtil.getToken(WX_CommonUtil.java:92)
+	at test.control.WX_CommonUtil_Test.main(WX_CommonUtil_Test.java:13)
+Caused by: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.DummyX509TrustManager.checkServerTrusted(SSLContextImpl.java:1010)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1323)
+	... 14 more
+2015-09-27 13:38:11,216 ERROR [main] (WX_CommonUtil.java:76)     - https请求异常：{}
+javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1884)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:276)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:270)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1341)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at control.WX_CommonUtil.httpsRequest(WX_CommonUtil.java:65)
+	at control.WX_CommonUtil.getToken(WX_CommonUtil.java:92)
+	at test.control.WX_CommonUtil_Test.main(WX_CommonUtil_Test.java:13)
+Caused by: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.DummyX509TrustManager.checkServerTrusted(SSLContextImpl.java:1010)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1323)
+	... 14 more
+2015-09-27 13:39:31,694 ERROR [main] (WX_CommonUtil.java:76)     - https请求异常：{}
+javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1884)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:276)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:270)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1341)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at control.WX_CommonUtil.httpsRequest(WX_CommonUtil.java:65)
+	at control.WX_CommonUtil.getToken(WX_CommonUtil.java:92)
+	at test.control.WX_CommonUtil_Test.main(WX_CommonUtil_Test.java:13)
+Caused by: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.DummyX509TrustManager.checkServerTrusted(SSLContextImpl.java:1010)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1323)
+	... 14 more
+2015-09-27 13:41:01,847 ERROR [main] (WX_CommonUtil.java:76)     - https请求异常：{}
+javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1884)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:276)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:270)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1341)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at control.WX_CommonUtil.httpsRequest(WX_CommonUtil.java:65)
+	at control.WX_CommonUtil.getToken(WX_CommonUtil.java:92)
+	at test.control.WX_CommonUtil_Test.main(WX_CommonUtil_Test.java:13)
+Caused by: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.DummyX509TrustManager.checkServerTrusted(SSLContextImpl.java:1010)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1323)
+	... 14 more
+2015-09-27 13:53:59,719 ERROR [main] (WX_CommonUtil.java:90)     - https请求异常：{}
+javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1884)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:276)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:270)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1341)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at control.WX_CommonUtil.httpsRequest(WX_CommonUtil.java:67)
+	at control.WX_CommonUtil.getToken(WX_CommonUtil.java:106)
+	at test.control.WX_CommonUtil_Test.main(WX_CommonUtil_Test.java:13)
+Caused by: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.DummyX509TrustManager.checkServerTrusted(SSLContextImpl.java:1010)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1323)
+	... 14 more
+2015-09-27 14:12:26,262 ERROR [main] (WX_CommonUtil.java:78)     - https请求异常：{}
+javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1884)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:276)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:270)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1341)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at control.WX_CommonUtil.httpsRequest(WX_CommonUtil.java:67)
+	at control.WX_CommonUtil.getToken(WX_CommonUtil.java:94)
+	at test.control.WX_CommonUtil_Test.main(WX_CommonUtil_Test.java:13)
+Caused by: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.DummyX509TrustManager.checkServerTrusted(SSLContextImpl.java:1010)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1323)
+	... 14 more
+2015-09-27 14:19:50,391 ERROR [main] (WX_CommonUtil.java:86)     - https请求异常：{}
+java.net.ProtocolException: Invalid HTTP method: get
+	at java.net.HttpURLConnection.setRequestMethod(HttpURLConnection.java:428)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.setRequestMethod(HttpsURLConnectionImpl.java:374)
+	at control.WX_CommonUtil.httpsRequest(WX_CommonUtil.java:56)
+	at control.WX_CommonUtil.getToken(WX_CommonUtil.java:101)
+	at test.control.WX_CommonUtil_Test.main(WX_CommonUtil_Test.java:13)
+2015-09-27 14:20:09,174 ERROR [main] (WX_CommonUtil.java:86)     - https请求异常：{}
+javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1884)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:276)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:270)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1341)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at control.WX_CommonUtil.httpsRequest(WX_CommonUtil.java:67)
+	at control.WX_CommonUtil.getToken(WX_CommonUtil.java:101)
+	at test.control.WX_CommonUtil_Test.main(WX_CommonUtil_Test.java:13)
+Caused by: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.DummyX509TrustManager.checkServerTrusted(SSLContextImpl.java:1010)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1323)
+	... 14 more
+2015-09-27 14:22:21,211 ERROR [main] (WX_CommonUtil.java:78)     - https请求异常：{}
+javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1884)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:276)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:270)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1341)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:153)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:868)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:804)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1016)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1312)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1339)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1323)
+	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+	at control.WX_CommonUtil.httpsRequest(WX_CommonUtil.java:67)
+	at control.WX_CommonUtil.getToken(WX_CommonUtil.java:94)
+	at test.control.WX_CommonUtil_Test.main(WX_CommonUtil_Test.java:13)
+Caused by: java.security.cert.CertificateException: No X509TrustManager implementation available
+	at sun.security.ssl.DummyX509TrustManager.checkServerTrusted(SSLContextImpl.java:1010)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1323)
+	... 14 more
+2015-09-27 14:45:08,499 INFO  [main] (WX_CommonUtil.java:71)     - {"access_token":"4gk22AQnye_SoZku7TSZ8JrChCcPIXifxSO77aUtb_Khsh6YNcmTKUxyGNAKVCRAfbEmJYk29XqzoXigVd-T8paIQbGWmBRF5031UMQ5Jx4","expires_in":7200}
+2015-09-27 14:53:03,660 INFO  [main] (WX_CommonUtil.java:70)     - {"access_token":"pcXde4-cCBD1F3lgaYPA4jjlDoGGMc9LmK2gyMUagsb8qWkQmaiW2Yy-LhcmjzaH7NqYC-1JSmGv8DEHNFqhONpMYgmaIt6c_N5KM3_kiII","expires_in":7200}
+2015-09-27 14:53:03,838 INFO  [main] (WX_CommonUtil.java:70)     - {"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest hint: [A5XQoA0783vr18]"}
+2015-09-27 14:55:43,524 INFO  [main] (WX_CommonUtil.java:70)     - {"access_token":"KnHiOBT1QrerXHnISBdm7bsfFtEArwAhFTgHv81VwLo5pEHlri_DED3m-fqhQXyKXgLP9ZFxiuxAoXwpvq9XidJrYJsguyf7-8aVho74BNU","expires_in":7200}
+2015-09-27 14:55:43,741 INFO  [main] (WX_CommonUtil.java:70)     - {"menu":{"button":[{"name":"技术交流","sub_button":[{"type":"click","name":"开源中国","key":"oschina","sub_button":[]},{"type":"click","name":"ITeye","key":"iteye","sub_button":[]},{"type":"view","name":"CocoaChina","url":"http:\/\/www.iteye.com","sub_button":[]}]},{"name":"购物","sub_button":[{"type":"view","name":"淘宝","url":"http:\/\/m.taobao.com","sub_button":[]},{"type":"view","name":"京东","url":"http:\/\/m.jd.com","sub_button":[]},{"type":"view","name":"唯品会","url":"http:\/\/m.vipshop.com","sub_button":[]},{"type":"view","name":"当当网","url":"http:\/\/m.dangdang.com","sub_button":[]},{"type":"view","name":"苏宁易购","url":"http:\/\/m.suning.com","sub_button":[]}]},{"name":"网页游戏","sub_button":[{"type":"view","name":"多泡","url":"http:\/\/www.duopao.com","sub_button":[]},{"type":"view","name":"一窝88","url":"http:\/\/www.yi588.com","sub_button":[]}]}]}}
+2015-09-27 14:57:08,316 INFO  [main] (WX_CommonUtil.java:70)     - {"access_token":"5xTfw4jwz4SzpjZkybJPr5Kdp4IiK0GVjL4feyuN4FllcqWgJOAd1I4VL9U2gc6cjqaAsP-aJP5TRhtkpr3Me7Ne1gNVtLUVR-AUckmlar4","expires_in":7200}
+2015-09-27 14:57:08,614 INFO  [main] (WX_CommonUtil.java:70)     - {"errcode":0,"errmsg":"ok"}
+2015-09-27 14:57:44,031 INFO  [main] (WX_CommonUtil.java:70)     - {"access_token":"Pl-XXZzLMYGa4xT9qTaF9riKJcGcvsu7VFd7qqbE7TALl3pMmJIbhH7yGvH50NsY0sCZZ2qu2cY-77T6AD9BAPpJOMXwvweMSjAtluAOGZo","expires_in":7200}
+2015-09-27 14:57:44,238 INFO  [main] (WX_CommonUtil.java:70)     - {"errcode":46003,"errmsg":"menu no exist hint: [RaPfqa0063vr18]"}
+2015-09-27 15:48:09,625 ERROR [main] (WX_HttpsControler.java:67)     - 输出流为null
+2015-09-27 15:48:10,324 INFO  [main] (WX_HttpsControler.java:81)     - {"access_token":"gkq88PY1G-ZAf3e3L5FKhjNr-XBlNsoWMsurr3YnPeA_EZNggOhbYg_b8Ux2OXhiwtumg3CLQWYgbgamn5Udbu_kwEAbB35I2liaZM8TDVo","expires_in":7200}
+2015-09-27 15:48:10,331 ERROR [main] (WX_HttpsControler.java:67)     - 输出流为null
+2015-09-27 15:48:10,536 INFO  [main] (WX_HttpsControler.java:81)     - {"errcode":46003,"errmsg":"menu no exist hint: [kipAAa0089vr19]"}
+2015-09-27 15:52:04,010 ERROR [main] (WX_HttpsControler.java:86)     - https请求异常：{}
+java.lang.NullPointerException
+	at bean.WX_Object.write(WX_Object.java:39)
+	at control.WX_HttpsControler.httpsRequest(WX_HttpsControler.java:63)
+	at control.WX_HttpsControler.getToken(WX_HttpsControler.java:101)
+	at test.control.WX_CommonHTTPSUtil_Test.main(WX_CommonHTTPSUtil_Test.java:15)
+2015-09-27 15:52:39,487 ERROR [main] (WX_HttpsControler.java:67)     - https没有输出的数据 或者 输出流为null
+2015-09-27 15:52:39,571 INFO  [main] (WX_HttpsControler.java:81)     - {"access_token":"YJxvdwzZgKzhF5TArL9x1cq_OwLHaJt50qGHj9mMwvZPaKZOVlNMDgmK3Fsi-_GL4IUtrqnDbSmSHF5eQqtNoJ4DKbjKjyvuV-UxXm7Eu0g","expires_in":7200}
+2015-09-27 15:52:39,706 ERROR [main] (WX_HttpsControler.java:67)     - https没有输出的数据 或者 输出流为null
+2015-09-27 15:52:39,769 INFO  [main] (WX_HttpsControler.java:81)     - {"errcode":46003,"errmsg":"menu no exist hint: [_JU98a0359vr22]"}
+2015-09-27 15:53:59,272 INFO  [main] (WX_HttpsControler.java:67)     - https没有提交的数据 或者 输出流为null
+2015-09-27 15:53:59,358 INFO  [main] (WX_HttpsControler.java:81)     - {"access_token":"_mE-98yvEU1lUmIjjYvRWhxToQXPvWWV4D8rqH_683P2Np0C007x-YVpPl2AUyG9QB0tZOTz1Spv68a_VPXX-o8s8I3lv4MTquadBVy6ofk","expires_in":7200}
+2015-09-27 15:53:59,509 INFO  [main] (WX_HttpsControler.java:67)     - https没有提交的数据 或者 输出流为null
+2015-09-27 15:53:59,579 INFO  [main] (WX_HttpsControler.java:81)     - {"errcode":46003,"errmsg":"menu no exist hint: [IJFvkA0439vr22]"}
+2015-09-27 16:22:48,402 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 16:22:48,509 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"DShjSXXn8KmqMLvrZbvHujT1ufBDbAB04suQ_yawTS1GXxbUFJ7Iu22cjTjt3Z7eWoOgQhS_hZa7Y8jcd0K0Cka01cI2SOXjN8CBZvrBprc","expires_in":7200}
+2015-09-27 16:22:48,695 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 16:22:48,758 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":46003,"errmsg":"menu no exist hint: [ovW.Da0168vr21]"}
+2015-09-27 16:54:19,757 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 16:54:19,864 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"sPb803xTpjAaahoiMi6TsIuAaWBoz-H4McOW_xCo3sSM8gGd8VckLtpBf8-oIY12EpNl7Vj_Z_7Z7gZpDuE9YHSyIuolm4oxc_D0EH9Ujm0","expires_in":7200}
+2015-09-27 16:58:23,449 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 16:58:23,537 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"Cf4HgmBb6vZHt1sTYi054of2wNX9QCwy9qUiqdRAr2OamvAL34V-B05HFKrQ_juu1F1Rx-GB-WTehcJaBgKVnBoefwmmP7PwviYP2-0KJ_Q","expires_in":7200}
+2015-09-27 16:59:30,848 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 16:59:30,934 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"NFaBAZL24u_58qIGMlbodBRsQE0ZCWQ1QsZVU-KZrw57F2Dxt4t3-ExIDWhOcnGw0spsgEzlWCCLUjLvXt5S2vWTcGQ598iHtnau7_juY88","expires_in":7200}
+2015-09-27 17:00:19,568 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:00:19,647 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"6gLKBuMfV4cxfxBMNQ5ug92MRivSkOftUR1RCm8Si867nQouxkN-l7p6DtHNsM7YSfQHaQKXrEtGdRJXC1c1jmCah8r0OmmF0NQiQ5DNtO8","expires_in":7200}
+2015-09-27 17:00:28,342 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:00:28,422 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"6gLKBuMfV4cxfxBMNQ5ug92MRivSkOftUR1RCm8Si84dv7tlNzEzVGC3xsvtARU3jtoJ16AQMbR72VavEpx7ngq_8IvdUy-UZequ-3NcXoE","expires_in":7200}
+2015-09-27 17:00:29,734 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40017,"errmsg":"invalid button type hint: [fKAWsA0429vr20]"}
+2015-09-27 17:08:21,995 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:08:22,089 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"kNDn4u-FjscKV8HSTtRd0ZgKq8BwE7JVVpNeDBTvAdJaNp2mN8493YSLEagA4guC5LN5j7okWrX1o26jBpIPNogI70y1bEipvST9VBYXHGU","expires_in":7200}
+2015-09-27 17:08:24,387 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40017,"errmsg":"invalid button type hint: [1ArxXa0903vr22]"}
+2015-09-27 17:08:38,933 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:08:39,009 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"kNDn4u-FjscKV8HSTtRd0ZgKq8BwE7JVVpNeDBTvAdLUe3oxZ305ax_4enHiI34atywGW7ZK8jSI8BpwNKgPGOb1fyxHnleQX8Dm5uaTn94","expires_in":7200}
+2015-09-27 17:08:39,304 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40017,"errmsg":"invalid button type hint: [JiujuA0918vr23]"}
+2015-09-27 17:11:50,544 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:11:50,636 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"aU3qmkPseWGN4TX8iATu9m7pFjNcxWLjXpBkwhBe52aZSxwwbUkgomOwJV9A2NGnGIpm-dNbQLslY7Fr26OnRPRJ3a0kijP4NeN9j6l2pfo","expires_in":7200}
+2015-09-27 17:11:50,947 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40016,"errmsg":"invalid button size hint: [4VzlDa0110vr23]"}
+2015-09-27 17:16:26,662 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:16:26,751 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"7Hw7JJUfiGQbYDwSM3V-w21Fb-ry24cyOl5fuoghQILL9Ut5M-Lv7evVa1lxwehHuRDJuu6XMFsNLvHltTx3_AbrlIuJVdQTixRP24qHUz8","expires_in":7200}
+2015-09-27 17:16:27,319 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":0,"errmsg":"ok"}
+2015-09-27 17:17:47,364 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:17:47,460 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"5xTfw4jwz4SzpjZkybJPr8Yukk5Lg8-osVriwTyubKlWLynsg7CnigYqSOTa-auvohIcdZIn8hNKIDdR59cwYlMtLQxyTqdhPd5fQfMl7LI","expires_in":7200}
+2015-09-27 17:17:47,766 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40018,"errmsg":"invalid button name size hint: [xvViRA0467vr20]"}
+2015-09-27 17:18:23,550 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:18:23,639 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"_bS2BZS7-SobNyIsHEOU3bh6y2HDTpVIdBqQRyQEpchHn5mvrwkK5O41D3YgptkNvw4m2CUvALh9E2Lo7q248Ay28NKqgRR0H8gKUNP6DMg","expires_in":7200}
+2015-09-27 17:18:24,049 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":0,"errmsg":"ok"}
+2015-09-27 17:18:34,970 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:18:35,046 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"_bS2BZS7-SobNyIsHEOU3bh6y2HDTpVIdBqQRyQEpcilmit61ug1UnwpRJYH4xwQG4lTpKgH5I4-Vjhw_C3ztfdjWY5xoutxDBLnXYWHfC0","expires_in":7200}
+2015-09-27 17:18:35,340 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40018,"errmsg":"invalid button name size hint: [AL5YWa0514vr21]"}
+2015-09-27 17:19:11,935 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:19:12,032 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"yGXxzBi7LsoU3O23DwNA2JRQuE2LuhDo2hX0RuZa2mXWu9cB0yZIgY9I_DhPZCeyY73O-_hX66iwn49XDjsc6sJEtne8wsPNMV6lK-eGjaU","expires_in":7200}
+2015-09-27 17:19:12,381 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":0,"errmsg":"ok"}
+2015-09-27 17:19:48,649 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:19:48,729 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"gkq88PY1G-ZAf3e3L5FKhntp-sip2UeruXz6k6aGynrL-urWDaAFDHa2OT5RvO3RyVuiiLQ6kw45TPHPg59IP5BPH8uVL3Y4RUErE2T5HQg","expires_in":7200}
+2015-09-27 17:19:48,971 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:19:49,093 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":0,"errmsg":"ok"}
+2015-09-27 17:20:25,478 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:20:25,574 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"bXZ5IW9VlOwohjvfF2tNiSxNbgwdjAP1fYwrYRZTX7B8apysGk8t98dAS5Kjo5nI1dbntgLu9ZQyWXtBs52pY_BS-eWu_Ktux-KwL89zeaI","expires_in":7200}
+2015-09-27 17:20:25,832 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:20:25,957 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":0,"errmsg":"ok"}
+2015-09-27 17:21:10,356 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:21:10,645 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"AxeXgOTQ2oyZmrvbf7vawbIuKou5UPmeKu0tnmm7e8LUd888UU-eGCZHdh4N09hswxdhEvlt69999bCfIyEGOoADHibRhNAbxTfsrx1JSa0","expires_in":7200}
+2015-09-27 17:21:10,947 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40018,"errmsg":"invalid button name size hint: [T7M.Qa0670vr22]"}
+2015-09-27 17:21:50,352 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:21:50,440 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"Lo62k2OEAdgcWjlRGFTsQKMW7nRoqKOaEt_5BnWuLMKk6A-BhEOJKADO1SvCtruevAeLS64urt4_D2BQBlKGw2gk4ydtPSbN82PJho6Obr8","expires_in":7200}
+2015-09-27 17:21:50,989 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":0,"errmsg":"ok"}
+2015-09-27 17:22:25,835 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:22:25,920 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"UCrP8Mb1o8cFv3lhh14CC-JOwoxYgejKVR2cfLG-gPMpQjBm4sk9hOvFti8PAt3ZTruFPVobTOkBkNAMT6-s5BamR3o1tXYwoNQbEffaKAA","expires_in":7200}
+2015-09-27 17:22:26,222 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40018,"errmsg":"invalid button name size hint: [q99noA0745vr19]"}
+2015-09-27 17:23:44,165 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:23:44,258 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"JVO3hC2WeIpUp9EkNcxifrWLtugAVE-K-JrZDkYt-lTWs3it9h_OSLWxjY68xrAHo7-kIdiom3kVES7nOQnRnth2wIclxXloj-MDfw0z8KE","expires_in":7200}
+2015-09-27 17:23:44,786 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":0,"errmsg":"ok"}
+2015-09-27 17:29:38,630 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:29:38,720 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"4gk22AQnye_SoZku7TSZ8At2egth7kaMezlmXz089TwvbAbNhmZIoLeZZxLsXeTk0caRKofDZte0W5eTHTvtQ2pGRhpRfaDAs1ASnOIj1So","expires_in":7200}
+2015-09-27 17:29:39,020 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40027,"errmsg":"invalid sub button url size hint: [m2jdta0178vr21]"}
+2015-09-27 17:31:33,027 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:31:33,107 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"oDpnsNvbhEmiYFEPw_FrwKAwYK5CsWWXjId2vlZlWnoqo49M1FyaGDtJj3qmLvhNAcv-nyi7JKrzQjdkL_9rrDCcQf4ZDc_la0kBMVIhkXk","expires_in":7200}
+2015-09-27 17:31:33,406 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40027,"errmsg":"invalid sub button url size hint: [WzLuua0292vr19]"}
+2015-09-27 17:31:45,120 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:31:45,200 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"oDpnsNvbhEmiYFEPw_FrwKAwYK5CsWWXjId2vlZlWnqq8qdwS6DQNgveVxtZ9DejfL4eIsthdGRnWmE4uIOGjODyV_fJAYSfM3_Z2DiIhFM","expires_in":7200}
+2015-09-27 17:31:45,503 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40027,"errmsg":"invalid sub button url size hint: [h0304vr20]"}
+2015-09-27 17:32:08,973 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:32:09,056 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"KRfUI3_R473AA_Wuqk21PBSilcEfbdpuLg1LdBNlI9XRwa78VlH4TulDR9zJ7-XJPI0quFb8vlfK__xdwuOcOg4lHH9vQIKl5m9smCVubfI","expires_in":7200}
+2015-09-27 17:32:10,365 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40054,"errmsg":"invalid sub button url domain hint: [yqFHpa0329vr23]"}
+2015-09-27 17:32:51,115 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:32:51,199 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"qXCQvWNyiT-ICVB9BwD9TDm77QwwmDIfWD0pp61QLuBPpAUEf4o_uWZQ0wgVvZnZKvL16OsYsC8_fyT9CCKtvVlu8sH1tFjTCjuUzYYag0g","expires_in":7200}
+2015-09-27 17:32:51,488 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40027,"errmsg":"invalid sub button url size hint: [9zGTJa0370vr21]"}
+2015-09-27 17:33:32,443 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:33:32,524 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"0Akd_t97pJFh5w-SinCft6iD636n2Cl4e6f3qF33jmm0j90aVflcQDHagQ4t_j3z9cLGgYC2VX1OIS1LGaEW-uSdIY66pL29-B577iMk7Os","expires_in":7200}
+2015-09-27 17:33:32,826 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40027,"errmsg":"invalid sub button url size hint: [znn0412vr21]"}
+2015-09-27 17:33:43,937 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:33:44,008 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"0Akd_t97pJFh5w-SinCft6iD636n2Cl4e6f3qF33jmnYAHtwkSaKlAr-Quv5VvkJidIFQhUNk82fKX0vL_ThF-ZOwbjwEGXJrobDxE2rLHw","expires_in":7200}
+2015-09-27 17:33:44,323 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":40027,"errmsg":"invalid sub button url size hint: [l7wJZa0423vr23]"}
+2015-09-27 17:34:37,767 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:34:37,852 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"TplYDBVxpUivZNvY6JzImbH4fkeBbxFyvb9WKMoj7mGXnXzjODoz8IBORtNxZoqc9U9GAKrC7pd6q8qcWZK_N6JYSxwCba2MtypBEi3UAsQ","expires_in":7200}
+2015-09-27 17:34:38,418 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":0,"errmsg":"ok"}
+2015-09-27 17:41:06,670 INFO  [main] (WX_HttpsControler.java:68)     - https没有提交的数据 或者 输出流为null
+2015-09-27 17:41:06,772 INFO  [main] (WX_HttpsControler.java:82)     - {"access_token":"P1ccQ8mafDDx8xoBpfAI4FmXyG1mKHp0Bnw-Owl3imBB8ygiigjmvMPJ6GjZgqwmoomV9cJUI1OlFM6k4tWAMaV0qGgRpFnH23vZT_EY89s","expires_in":7200}
+2015-09-27 17:41:07,325 INFO  [main] (WX_HttpsControler.java:82)     - {"errcode":0,"errmsg":"ok"}

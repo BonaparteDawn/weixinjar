@@ -1,28 +1,28 @@
-package test;
+package test.control;
 import net.sf.json.JSONObject;
 import bean.WX_APIToken;
 import bean.menu.WX_ClickButton;
 import bean.menu.WX_ComplexButton;
 import bean.menu.WX_Menu;
 import bean.menu.WX_ViewButton;
-import util.WX_API;
-import util.WX_Method_Util;
 import util.WX_Static;
 import control.WX_HttpsControler;
+import control.WX_MenuControler;
 
-public class Menu_Test {
+public class WX_MenuControler_Test {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		WX_HttpsControler controler = new WX_HttpsControler();
-		WX_APIToken tokent = controler.getToken(WX_Static.devConfig.getAppID(), WX_Static.devConfig.getAppSecret());
+		WX_APIToken apitoken = controler.getToken(WX_Static.devConfig.getAppID(), WX_Static.devConfig.getAppSecret());
+		System.out.println(apitoken);
 		WX_Menu menu= new WX_Menu();
 		WX_ViewButton btn11 = new WX_ViewButton();
 		btn11.setName("官网主页");
 		btn11.setType("view");
-		btn11.setUrl("http://www.ccniit.com/");
+		btn11.setUrl("1");
 
 		WX_ViewButton btn12 = new WX_ViewButton();
 		btn12.setName("新闻动态");
@@ -49,10 +49,10 @@ public class Menu_Test {
 		btn31.setType("view");
 		btn31.setUrl("http://www.ccniit.com/HTML/service/article_50.html");
 
-		WX_ViewButton btn32 = new WX_ViewButton();
+		WX_ClickButton btn32 = new WX_ClickButton();
 		btn32.setName("后勤保障");
-		btn32.setType("view");
-		btn32.setUrl("http://www.ccniit.com/HTML/service/article_53.html");
+		btn32.setType("click");
+		btn32.setKey("123");
 
 		WX_ComplexButton mainBtn1 = new WX_ComplexButton();
 		mainBtn1.setName("Neusoft");
@@ -66,7 +66,7 @@ public class Menu_Test {
 		mainBtn2.getSub_button().add(btn22);
 
 		WX_ComplexButton mainBtn3 = new WX_ComplexButton();
-		mainBtn3.setName("服务指南");
+		mainBtn3.setName("服务指南！");
 		mainBtn3.getSub_button().add(btn31);
 		mainBtn3.getSub_button().add(btn32);
 
@@ -76,7 +76,12 @@ public class Menu_Test {
 		
 		String info=JSONObject.fromObject(menu).toString();
 		System.out.println(info);
-		controler.httpsRequest(WX_API.CREATE_MENU.replace("ACCESS_TOKEN", tokent.getAccess_token()), WX_Method_Util.POST, info);
-//		controler.httpsRequest(WX_API.DELETE_MENU.replace("ACCESS_TOKEN", tokent.getAccess_token()), WX_Method_Util.GET, null);
+		
+		WX_MenuControler controler2 = new WX_MenuControler();
+		System.out.println(controler2.modify(menu));
+		System.out.println(controler2.getAll().get(0));
+//		controler2.delete();
+//		controler.httpsRequest(WX_API.CREATE_MENU.replace("ACCESS_TOKEN", apitoken.getAccess_token()), WX_Method_Util.POST, info);
+//		controler.httpsRequest(WX_API.DELETE_MENU.replace("ACCESS_TOKEN", apitoken.getAccess_token()), WX_Method_Util.GET, null);
 	}
 }

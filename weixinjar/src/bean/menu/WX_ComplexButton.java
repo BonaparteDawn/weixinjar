@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class WX_ComplexButton extends WX_ButtonBase {
 	/**
-	 * 按钮集装箱
+	 * 子按钮
 	 */
 	private List<WX_ButtonBase> sub_button = new ArrayList<WX_ButtonBase>();
 

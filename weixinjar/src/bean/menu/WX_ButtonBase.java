@@ -1,5 +1,4 @@
 package bean.menu;
-
 /**
  * 按钮的基类
  * @author YanFuzhong
@@ -11,7 +10,6 @@ public class WX_ButtonBase {
 	 * 按钮名称
 	 */
 	private String name;
-	
 	/**
 	 * 获得{@link #name}的值
 	 * @return 成员变量name (数据类型 String)
