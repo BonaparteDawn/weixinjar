@@ -14,21 +14,21 @@ public class WX_Menu {
 	/**
 	 * 菜单子按钮
 	 */
-	private List<WX_ComplexButton> button = new ArrayList<WX_ComplexButton>();
+	private List<WX_ButtonBase> button = new ArrayList<WX_ButtonBase>();
 
 	/**
 	 * 获得{@link #button}的值
-	 * @return 成员变量button (数据类型 List<WX_ComplexButton>)
+	 * @return 成员变量button (数据类型 List<WX_ButtonBase>)
 	 */
-	public List<WX_ComplexButton> getButton() {
+	public List<WX_ButtonBase> getButton() {
 		return button;
 	}
 
 	/**
 	 * 设置成员变量{@link #button}的值
-	 * @param button 成员变量 (数据类型 List<WX_ComplexButton>)
+	 * @param button 成员变量 (数据类型 List<WX_ButtonBase>)
 	 */
-	public void setButton(List<WX_ComplexButton> button) {
+	public void setButton(List<WX_ButtonBase> button) {
 		this.button = button;
 	}
 

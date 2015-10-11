@@ -18,36 +18,37 @@ public class WX_MenuControler_Test {
 		WX_HttpsControler controler = new WX_HttpsControler();
 		WX_APIToken apitoken = controler.getToken(WX_Static.devConfig.getAppID(), WX_Static.devConfig.getAppSecret());
 		System.out.println(apitoken);
+		
 		WX_Menu menu= new WX_Menu();
 		WX_ViewButton btn11 = new WX_ViewButton();
 		btn11.setName("官网主页");
 		btn11.setType("view");
-		btn11.setUrl("1");
+		btn11.setUrl("http://www.ccniit.com");
 
 		WX_ViewButton btn12 = new WX_ViewButton();
 		btn12.setName("新闻动态");
 		btn12.setType("view");
-		btn12.setUrl("http://www.ccniit.com/HTML/news/list_18.html");
+		btn12.setUrl("http://www.ccniit.com");
 
 		WX_ViewButton btn13 = new WX_ViewButton();
 		btn13.setName("招生");
 		btn13.setType("view");
-		btn13.setUrl("http://www.ccniit.com/HTML/recruit/");
+		btn13.setUrl("http://www.ccniit.com");
 
 		WX_ViewButton btn21 = new WX_ViewButton();
 		btn21.setName("计算机科学与技术系");
 		btn21.setType("view");
-		btn21.setUrl("http://web.ccniit.com/webpage/164f435a-6bc6-4aa5-a6be-cb44f2cdd119.asp");
+		btn21.setUrl("http://www.ccniit.com");
 
 		WX_ViewButton btn22 = new WX_ViewButton();
 		btn22.setName("应用外语系");
 		btn22.setType("view");
-		btn22.setUrl("http://web.ccniit.com/WebPage/996FEC61-B28D-442F-AC65-21EC1059F7EC.asp");
+		btn22.setUrl("http://www.ccniit.com");
 
 		WX_ViewButton btn31 = new WX_ViewButton();
 		btn31.setName("校园导图");
 		btn31.setType("view");
-		btn31.setUrl("http://www.ccniit.com/HTML/service/article_50.html");
+		btn31.setUrl("http://www.ccniit.com");
 
 		WX_ClickButton btn32 = new WX_ClickButton();
 		btn32.setName("后勤保障");
@@ -80,7 +81,7 @@ public class WX_MenuControler_Test {
 		WX_MenuControler controler2 = new WX_MenuControler();
 		System.out.println(controler2.modify(menu));
 		System.out.println(controler2.getAll().get(0));
-//		controler2.delete();
+		controler2.delete();
 //		controler.httpsRequest(WX_API.CREATE_MENU.replace("ACCESS_TOKEN", apitoken.getAccess_token()), WX_Method_Util.POST, info);
 //		controler.httpsRequest(WX_API.DELETE_MENU.replace("ACCESS_TOKEN", apitoken.getAccess_token()), WX_Method_Util.GET, null);
 	}
