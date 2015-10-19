@@ -16,7 +16,13 @@ import bean.menu.WX_ComplexButton;
 import bean.menu.WX_Menu;
 import bean.menu.WX_ViewButton;
 import control.interfaces.WX_DataOperate;
-
+/**
+ * 
+ * 微信菜单操作的控制器
+ * @author YanFuzhong
+ * @date 2015-10-11 下午09:59:30
+ * @version
+ */
 public class WX_MenuControler extends WX_APIContrler  implements WX_DataOperate<WX_Menu>{
 	
 	/**

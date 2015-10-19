@@ -3,6 +3,7 @@ package control;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
@@ -75,16 +76,15 @@ public class WX_CoreControler extends WX_Object implements WX_HttpMethod{
 		}
 		log.info(hashname+": "+"开始连接....");
 		Map<String, String> map = new HashMap<String, String>();
-		// 微信加密签名
-		map.put("signature",req.getParameter("signature"));
-		// 时间戳
-		map.put("timestamp",req.getParameter("timestamp"));
-		// 随机数
-		map.put("nonce",req.getParameter("nonce"));
-		// 随机字符串
-		map.put("echostr",req.getParameter("echostr"));
+		Enumeration<?> pn = req.getParameterNames();
+		//存放连接返回的参数
+		while (pn.hasMoreElements()) {
+			String name = (String) pn.nextElement();
+			map.put(name, req.getParameter(name));
+		}
 		//该次连接用户的名字
 		map.put("hashname", String.valueOf(hashname));
+		System.err.println(map);
 		log.debug("map: "+ map);
 		if (WX_DvpControler.checkSignature(map)) {
 			log.info(hashname+": "+"证书验证通过");

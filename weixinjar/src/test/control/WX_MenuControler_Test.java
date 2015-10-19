@@ -18,7 +18,6 @@ public class WX_MenuControler_Test {
 		WX_HttpsControler controler = new WX_HttpsControler();
 		WX_APIToken apitoken = controler.getToken(WX_Static.devConfig.getAppID(), WX_Static.devConfig.getAppSecret());
 		System.out.println(apitoken);
-		
 		WX_Menu menu= new WX_Menu();
 		WX_ViewButton btn11 = new WX_ViewButton();
 		btn11.setName("¹ÙÍøÖ÷Ò³");
@@ -79,7 +78,7 @@ public class WX_MenuControler_Test {
 		System.out.println(info);
 		
 		WX_MenuControler controler2 = new WX_MenuControler();
-		System.out.println(controler2.modify(menu));
+//		System.out.println(controler2.modify(menu));
 		System.out.println(controler2.getAll().get(0));
 		controler2.delete();
 //		controler.httpsRequest(WX_API.CREATE_MENU.replace("ACCESS_TOKEN", apitoken.getAccess_token()), WX_Method_Util.POST, info);
