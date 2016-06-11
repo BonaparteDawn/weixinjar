@@ -4,10 +4,10 @@ import java.util.Date;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+
 import control.WX_FileControler;
 import control.WX_FileProControler;
 import control.WX_XmlControler;
-
 import bean.WX_DeveloperConfig;
 import bean.WX_Object;
 /**
@@ -34,7 +34,7 @@ public class WX_Static  extends WX_Object{
 	  */
 	 public static WX_FileProControler RETURNCODE_MANAGER;
 	 static{
-		 CLASSPATH = WX_Static.class.getClassLoader().getResource("").getFile().toString();
+		 CLASSPATH = ClassLoader.getSystemClassLoader().getResource("").getFile().toString();
 		ENCODE = "UTF-8";
 		String info = WX_FileControler.readFromFile(CLASSPATH+"/dvpconfig.xml");
 		devConfig = (WX_DeveloperConfig) WX_XmlControler.xml2object(info, WX_DeveloperConfig.class);
