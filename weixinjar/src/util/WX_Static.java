@@ -34,7 +34,7 @@ public class WX_Static  extends WX_Object{
 	  */
 	 public static WX_FileProControler RETURNCODE_MANAGER;
 	 static{
-		 CLASSPATH = ClassLoader.getSystemClassLoader().getResource("").getFile().toString();
+		 CLASSPATH = WX_Static.class.getClassLoader().getResource("").getFile().toString();
 		ENCODE = "UTF-8";
 		String info = WX_FileControler.readFromFile(CLASSPATH+"/dvpconfig.xml");
 		devConfig = (WX_DeveloperConfig) WX_XmlControler.xml2object(info, WX_DeveloperConfig.class);
